@@ -82,7 +82,7 @@ csvlog = CSVLogger(model_id+'_train_log.csv',append=True)
 model.summary()
 
 #%% split into training and test sets
-X_tr, X_ts, y_tr, y_ts = train_test_split(X, y, test_size=0.9, random_state=1)
+X_tr, X_ts, y_tr, y_ts = train_test_split(X, y, test_size=0.05, random_state=1)
 
 #%% train the model, output generated text after each iteration
 loss_hist=[]
