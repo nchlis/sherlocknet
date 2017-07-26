@@ -44,12 +44,14 @@ save_to_file = True
 #is written in the generated text, suppress warnings to avoid this.
 warnings.filterwarnings("ignore")
 
-for diversity in [0.1, 0.3, 0.5, 0.7, 1]:
+for diversity in [0.1, 0.3, 0.5, 0.7, 1, 2]:
     print()
-    print('',file=open(file, "a"))
+    print()
+    print('===== diversity:', diversity,'=====',file=sys.stdout)
     if(save_to_file==True):
-        print('----- diversity:', diversity,file=sys.stdout)
-        print('----- diversity:', diversity,file=open(file, "a"))
+        print('',file=open(file, "a"))
+        print('',file=open(file, "a"))
+        print('===== diversity:', diversity,'=====',file=open(file, "a"))
         
 
     generated = ''
