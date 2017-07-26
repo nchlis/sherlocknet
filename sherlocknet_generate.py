@@ -36,7 +36,7 @@ indices_char = np.load('indices_char.npy').item()#used to reverse encoding of ch
 
 chars_to_print=800#number of characters to generate
 file = "generated_text.txt"#file to save the generated text
-save_to_file = True
+save_to_file = False
 
 #some times "RuntimeWarning: divide by zero encountered in log"
 #is written in the generated text, suppress warnings to avoid this.
