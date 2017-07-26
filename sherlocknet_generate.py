@@ -37,17 +37,20 @@ indices_char = np.load('indices_char.npy').item()#used to reverse encoding of ch
 #%%generate new text in teminal and also save to file
 
 chars_to_print=800#number of characters to generate
-print_to = "generated_text.txt"#file to save the generated text
+file = "generated_text.txt"#file to save the generated text
+save_to_file = True
 
 #some times "RuntimeWarning: divide by zero encountered in log"
 #is written in the generated text, suppress warnings to avoid this.
 warnings.filterwarnings("ignore")
 
-for diversity in [0.3, 0.5, 0.7, 1]:
+for diversity in [0.1, 0.3, 0.5, 0.7, 1]:
     print()
-    print('',file=open(print_to, "a"))
-    print('----- diversity:', diversity,file=sys.stdout)
-    print('----- diversity:', diversity,file=open(print_to, "a"))
+    print('',file=open(file, "a"))
+    if(save_to_file==True):
+        print('----- diversity:', diversity,file=sys.stdout)
+        print('----- diversity:', diversity,file=open(file, "a"))
+        
 
     generated = ''
     sentence = '.'*maxlen
@@ -65,8 +68,9 @@ for diversity in [0.3, 0.5, 0.7, 1]:
 
         generated += next_char
         sentence = sentence[1:] + next_char
-        print(next_char, end='',file=sys.stdout)
-        print(next_char, end='',file=open(print_to, "a"))
+        print(next_char, end='',file=sys.stdout)      
+        if(save_to_file==True):
+            print(next_char, end='',file=open(file, "a"))
 
 
 
