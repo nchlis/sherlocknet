@@ -7,14 +7,12 @@ in order to generate new text.
 """
 
 from keras.models import load_model
-#from keras.optimizers import RMSprop
-#from keras.utils.data_utils import get_file
 import numpy as np
 import sys
 import warnings
 np.random.seed(1)#set the random seed
 
-#sample function original found at the corresponding keras example at
+#sample() function originally found at the corresponding keras example at
 #https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py
 def sample(preds, temperature=1.0):
     # helper function to sample an index from a probability array
