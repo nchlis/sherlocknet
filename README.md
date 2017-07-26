@@ -33,28 +33,47 @@ Low diversity values yield technically correct but repetitive and boring results
 Higher values of diversity are more "adventurous".
 
 ----- diversity: 0.1
------ Generating with seed: "diverting the stream; so i tho"
-diverting the stream; so i thought that i have a man of the man who was a man of a man who was a strange and the man who had been the man who was a man of a man who was a man of a single fellow which had been the man who had been the man who was a man of a strange state of some miles of the man who was a man of the statest man who had been so started to the man who had been the man who was a man of the man who had been the man who was a strange state of some sound of the same stranger and the man who had been the man who was a man of a man who was a man of some minutes and the man who had been the man who was a man of some minutes and the man who had been the man who was a man of a single fact that the man who had been a strange and the man who had been the man who was a man of some minutes to the man who had been the 
+' says have been the same as the country with the convict and the strange tracks of the country which had been concerned in the house and the convict of the country which had been concerned in the case of the strange tracks of the country which had been sent to the country with the country which had been standing in the street and the strange tracks of the country which had been seen in the country with the conclusion that the tragedy were so dead to the country with the strange tracks of the country which had been standing in the cab and the strange tracks of the country which had been standing in the cab, and the strange tracks were still in the country with the country which had been seen and the man who had seen the strange tracks of the strange tracks of the country which had been sta
+----- diversity: 0.3
+' says have been the same as the criminal?”
 
+“i will come to the country of the country and the murderer which had been able to conceal the matter to the paper which he had seen the same as the country with the same as the concealment of the countryside, and then she must have been able to see the strange tracks of the law. the steps were able to see the story of the man who had seen the criminal who had stood upon the stairs and the strongest chance of any other signs of the country which had been sent to the stranger in the strange train of strange faces. the stories of the man was about to look at the stairs. the man was a strange story which had been drawn up to the room. “i am sure that you will excuse me to see the matter in the morning. then i had seen the stone light of the street 
 ----- diversity: 0.5
------ Generating with seed: "diverting the stream; so i tho"
-diverting the stream; so i thought that he was not to be
-taken a man of his own study which i had seen the only means of his strange water and the aid of us, and see if they were able
-to do in the world who he has been in the side of the wall in the trail of it. the loss were a strong person to be the honour of the great end of the collection of the interest than the night and the police must admit that the moor was made to do as a series. and the doctor, i should be satisfied that i was a small street and was a few minutes. he would have happened in the disappearance of a long sort of crime, and the violent wind had been the promise of the man who was a single convict and his line which they were able to make a small pencil business. it was a long deal manner which may be seen and came at the table to the tragedy of i
+' says she, what is this could have formed a few days in the dead man’s face, and
+i saw the deep door of the street and in the character of the story. then you have a confidence to prove all the way of the heart of the country of the strangers and a man who had reached the room which i might have formed
+the fact that the reason that he had been permissivly from death, and i was still told to force the lawn and made him the work and the detectives in the matter of his secret and reaching the door and the household had struck a grief to get the day yet?”
 
+“no.”
+
+“well, mr. holmes, that i shall be with you to ask you to get better to take the course of the criminal diffidences which are waiting as in the box. he was a boyly cold window in the hall, which showed that the police could not have 
 ----- diversity: 0.7
------ Generating with seed: "diverting the stream; so i tho"
-diverting the stream; so i thought to say that he was unlikely we were annoyed to make us the alternative, and then i regular to
-ever stick as i sat slowly out, and the murder, and the same that he
-greeted his face without him, and took to extreme the moor and
-freed of importance, and yet it was evident, and the house was of eight end that it was lest the orders of his fire when he made him in order to make
-for the moor.
+', the correct seat and have been drawn before i had got the rest as far as i could not see me. it is a dreadful death to tell him
+that this is the same as is the same as if i used to know that it was not in the house and looked his head from his right and
+agitating there is no one in your life, mr.
+jones, the second brother restor lived at all the same man with a line. the candle had been worked over the rucastles.  i was
+at once recognised to step into his pocket.
 
-“i think that it is a hang at baker street. it was for all that was that i should have
-caused by the first and man was over the farther end out of the ordiniance
-upon the man, with the night, and to give me not here to make any reason, but not to be found ourselves than any indian. it was dead, and that i was a
-pland one of the really the commissions of the room. if you will see how you have none
-obse
+“i could not get away. how long were they done?”
+
+“well, that is all on the sides of this distant point.  the man of your investigation. the other
+hand that the hall was afraid to pursued his carriage before
+he was able to get here a wideseleman of
+the name of the very deduction of the matter of during this
+could be wanting in
+----- diversity: 1
+ _glare or
+way, to think the key without death for the life. where, after all, how does it might have been the tanket before.
+
+"it means that anything in the surgeon upon the morning, after
+one of these, round tuesday evening.”
+
+holmes stapleton repulsed me the shawl, he runs in the middle-plants, but his finger and a house, and to escape the
+swing for a
+subject. they are that of one at home.” so amazed if she had been avoided in the
+centre of her husband; 'pot it because
+her hamas went out of flash than work, for the man managed to already the nice and self-road at
+grain arthur in town, and a long creature may serve to have been to
+wink himself to enter the physician that he did well have him enough to get an inhabitant to the paddock that i looked at the police or breakfast to our argume
 
 ## Licence
 MIT
