@@ -35,14 +35,17 @@ the text makes little sense (if any).
 
 
 ===== diversity: 0.1 =====
+
 ' says have been the same as the country with the convict and the strange tracks of the country which had been concerned in the house and the convict of the country which had been concerned in the case of the strange tracks of the country which had been sent to the country with the country which had been standing in the street and the strange tracks of the country which had been seen in the country with the conclusion that the tragedy were so dead to the country with the strange tracks of the country which had been standing in the cab and the strange tracks of the country which had been standing in the cab, and the strange tracks were still in the country with the country which had been seen and the man who had seen the strange tracks of the strange tracks of the country which had been sta
 
 ===== diversity: 0.3 =====
+
 ' says have been the same as the criminal?”
 
 “i will come to the country of the country and the murderer which had been able to conceal the matter to the paper which he had seen the same as the country with the same as the concealment of the countryside, and then she must have been able to see the strange tracks of the law. the steps were able to see the story of the man who had seen the criminal who had stood upon the stairs and the strongest chance of any other signs of the country which had been sent to the stranger in the strange train of strange faces. the stories of the man was about to look at the stairs. the man was a strange story which had been drawn up to the room. “i am sure that you will excuse me to see the matter in the morning. then i had seen the stone light of the street 
 
 ===== diversity: 0.5 =====
+
 ' says she, what is this could have formed a few days in the dead man’s face, and
 i saw the deep door of the street and in the character of the story. then you have a confidence to prove all the way of the heart of the country of the strangers and a man who had reached the room which i might have formed
 the fact that the reason that he had been permissivly from death, and i was still told to force the lawn and made him the work and the detectives in the matter of his secret and reaching the door and the household had struck a grief to get the day yet?”
@@ -52,6 +55,7 @@ the fact that the reason that he had been permissivly from death, and i was stil
 “well, mr. holmes, that i shall be with you to ask you to get better to take the course of the criminal diffidences which are waiting as in the box. he was a boyly cold window in the hall, which showed that the police could not have 
 
 ===== diversity: 0.7 =====
+
 ', the correct seat and have been drawn before i had got the rest as far as i could not see me. it is a dreadful death to tell him
 that this is the same as is the same as if i used to know that it was not in the house and looked his head from his right and
 agitating there is no one in your life, mr.
@@ -67,6 +71,7 @@ the name of the very deduction of the matter of during this
 could be wanting in
 
 ===== diversity: 1 =====
+
  _glare or
 way, to think the key without death for the life. where, after all, how does it might have been the tanket before.
 
@@ -82,6 +87,7 @@ grain arthur in town, and a long creature may serve to have been to
 wink himself to enter the physician that he did well have him enough to get an inhabitant to the paddock that i looked at the police or breakfast to our argume
 
 ===== diversity: 2 =====
+
 ’n nor canntpleaty
 her.?”
 
