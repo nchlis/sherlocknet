@@ -64,70 +64,79 @@ for i, sentence in enumerate(sentences):
         X[i, t, char_indices[char]] = 1
     y[i, char_indices[next_chars[i]]] = 1
 
-#%%  build the model: a 5 layer LSTM
+#%% split into training and test sets
+X_tr, X_ts, y_tr, y_ts = train_test_split(X, y, test_size=0.05, random_state=1)
+del(X,y)#original copy of the dataset no longer needs to be in memory
+
+#%%  build the model: a 2-layer LSTM
+dropout=0.2
 print('Build model...')
-model_id='LSTM_5x256_drop0.0'
+model_id='LSTM_2x438_drop'+str(dropout)
 model = Sequential()
-model.add(LSTM(256, input_shape=(maxlen, len(chars)), return_sequences=True, dropout=0.4))
-model.add(LSTM(256, return_sequences=True, dropout=0.0))
-model.add(LSTM(256, return_sequences=True, dropout=0.0))
-model.add(LSTM(256, return_sequences=True, dropout=0.0))
-model.add(LSTM(256, dropout=0.0))
+model.add(LSTM(438, input_shape=(maxlen, len(chars)), return_sequences=True, dropout=dropout))
+model.add(LSTM(438, dropout=dropout))
 model.add(Dense(len(chars)))
 model.add(Activation('softmax'))
 optimizer = 'adam'
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
 
-csvlog = CSVLogger(model_id+'_train_log.csv',append=True)
-model.summary()
-
-#%% split into training and test sets
-X_tr, X_ts, y_tr, y_ts = train_test_split(X, y, test_size=0.05, random_state=1)
+csvlog = CSVLogger(model_id+'_train_log.csv',append=True)#save training progress in a .csv
+model.summary()#print model summary, also number of parameters
 
 #%% train the model, output generated text after each iteration
 loss_hist=[]
 val_loss_hist=[]
 chars_to_print=400#characters to print after each epoch
-for iteration in range(0, 100):
+file = "generated_text.txt"#file to save the generated text
+save_to_file = False#if False, only show output to screen
+max_epochs=50#maximum number of epochs to train the model
+
+#some times "RuntimeWarning: divide by zero encountered in log"
+#is written in the generated text, suppress warnings to avoid this.
+#warnings.filterwarnings("ignore")
+
+for iteration in range(0, max_epochs):
     print()
     print('-' * 50)
     print('Iteration', iteration)
     #print('Iteration', type(iteration))
-    hst = model.fit(X_tr, y_tr, batch_size=128, epochs=iteration+1, initial_epoch=iteration,
+    hst = model.fit(X_tr, y_tr, batch_size=512, epochs=iteration+1, initial_epoch=iteration,
                     callbacks=[csvlog], validation_data=(X_ts, y_ts))
     cur_loss=hst.history['loss'][0]
     cur_val_loss=hst.history['val_loss'][0]
     loss_hist.append(cur_loss)
     savepath=model_id+' epoch'+str(iteration)+' val_loss'+str(cur_val_loss)+'.h5'
     model.save(savepath)
-
-    start_index = random.randint(0, len(text) - maxlen - 1)
-
-    for diversity in [0.3]:
+    
+    for diversity in [0.3, 0.5]:
         print()
-        print('----- diversity:', diversity)
-
+        print()
+        print('===== diversity:', diversity,'=====',file=sys.stdout)
+        if(save_to_file==True):
+            print('',file=open(file, "a"))
+            print('',file=open(file, "a"))
+            print('===== diversity:', diversity,'=====',file=open(file, "a"))
+            
+    
         generated = ''
-        sentence = text[start_index: start_index + maxlen]
+        sentence = '.'*maxlen
         generated += sentence
-        print('----- Generating with seed: "' + sentence + '"')
-        sys.stdout.write(generated)
-
+        print(generated)
+    
         for i in range(chars_to_print):
-            x = np.zeros((1, maxlen, len(chars)))
+            x = np.zeros((1, maxlen, len(indices_char)))
             for t, char in enumerate(sentence):
                 x[0, t, char_indices[char]] = 1.
-
+    
             preds = model.predict(x, verbose=0)[0]
             next_index = sample(preds, diversity)
             next_char = indices_char[next_index]
-
+    
             generated += next_char
             sentence = sentence[1:] + next_char
-
-            sys.stdout.write(next_char)
-            sys.stdout.flush()
-print()
+            print(next_char, end='',file=sys.stdout)      
+            if(save_to_file==True):
+                print(next_char, end='',file=open(file, "a"))
 
 
 
