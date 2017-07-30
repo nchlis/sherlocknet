@@ -34,16 +34,18 @@ indices_char = np.load('indices_char.npy').item()#used to reverse encoding of ch
 
 #%%generate new text in teminal and also save to file
 
-chars_to_print=10000#number of characters to generate
-file = "generated_text_10Kchars.txt"#file to save the generated text
+chars_to_print=800#number of characters to generate
+#chars_to_print=10000#number of characters to generate
+file = "generated_text.txt"#file to save the generated text
+#file = "generated_text_10Kchars.txt"#file to save the generated text
 save_to_file = True
 
 #some times "RuntimeWarning: divide by zero encountered in log"
 #is written in the generated text, suppress warnings to avoid this.
 warnings.filterwarnings("ignore")
 
-#for diversity in [0.1, 0.3, 0.5, 0.7, 1, 2]:
-for diversity in [0.5]:
+for diversity in [0.1, 0.3, 0.5, 0.7, 1, 2]:
+#for diversity in [0.5]:
     print()
     print()
     print('===== diversity:', diversity,'=====',file=sys.stdout)
@@ -54,21 +56,21 @@ for diversity in [0.5]:
         
 
     generated = ''
-    sentence = 'On the very day that I had com'.lower()#a 30 character seed sequence
-    generated += sentence
-    print(generated)
+    seed = 'On the very day that I had com'.lower()#a 30 character seed sequence
+    print(seed, end='')
+    if(save_to_file==True):
+        print(seed,file=open(file, "a"), end='')
 
     for i in range(chars_to_print):
         x = np.zeros((1, maxlen, len(indices_char)))
-        for t, char in enumerate(sentence):
+        for t, char in enumerate(seed):
             x[0, t, char_indices[char]] = 1.
 
         preds = model.predict(x, verbose=0)[0]
         next_index = sample(preds, diversity)
         next_char = indices_char[next_index]
-
-        generated += next_char
-        sentence = sentence[1:] + next_char
+       
+        seed = seed[1:] + next_char#update seed for next iteration
         print(next_char, end='',file=sys.stdout)      
         if(save_to_file==True):
             print(next_char, end='',file=open(file, "a"))
