@@ -25,7 +25,7 @@ def sample(preds, temperature=1.0):
 
 #%%load the trained model
 
-model=load_model('LSTM_2x438_drop0.0 epoch34 val_loss1.11933625518.h5')
+model=load_model('LSTM_2x438_drop0.2 epoch20 val_loss1.11961447114.h5')
 print('model loaded')
 
 maxlen = int(model.input.shape[1]) #length of each character sequence
@@ -34,15 +34,16 @@ indices_char = np.load('indices_char.npy').item()#used to reverse encoding of ch
 
 #%%generate new text in teminal and also save to file
 
-chars_to_print=800#number of characters to generate
-file = "generated_text.txt"#file to save the generated text
-save_to_file = False
+chars_to_print=10000#number of characters to generate
+file = "generated_text_10Kchars.txt"#file to save the generated text
+save_to_file = True
 
 #some times "RuntimeWarning: divide by zero encountered in log"
 #is written in the generated text, suppress warnings to avoid this.
 warnings.filterwarnings("ignore")
 
-for diversity in [0.1, 0.3, 0.5, 0.7, 1, 2]:
+#for diversity in [0.1, 0.3, 0.5, 0.7, 1, 2]:
+for diversity in [0.5]:
     print()
     print()
     print('===== diversity:', diversity,'=====',file=sys.stdout)
@@ -53,7 +54,7 @@ for diversity in [0.1, 0.3, 0.5, 0.7, 1, 2]:
         
 
     generated = ''
-    sentence = '.'*maxlen
+    sentence = 'On the very day that I had com'.lower()#a 30 character seed sequence
     generated += sentence
     print(generated)
 
