@@ -37,7 +37,7 @@ def sample(preds, temperature=1.0):
 #8 books were concatenated into one .txt file
 #the header and footer (added by project gutenberg) of each book were removed
 #before concatenation, since they are irrelevant to the learning process.
-path = './sherlock/edited_texts/all_sherlock_books.txt'
+path = 'all_sherlock_books.txt'
 text = open(path).read().lower()
 print('corpus length:', len(text))
 
