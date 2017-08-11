@@ -1,5 +1,7 @@
 ## Sherlocknet
 
+[link to related blog post.](https://nchlis.github.io/2017_07_22/page.html)
+
 A character to character LSTM model for text generation.
 The network was trained on the sherlock holmes books by Sir Arthur Conan Doyle.
 
